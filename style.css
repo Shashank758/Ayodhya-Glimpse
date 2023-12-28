@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    border: border-box;
+}
+.navbar{
+    height: 70px; 
+    background-color: bisque;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-search{
+    margin-left: 15px;
+    background-color: aliceblue;
+    width: 400px;
+    height: 40px;
+     display: flex;
+     border-radius: 4px;
+
+}
+.search-input{
+    width: 400px;
+}
+.nav-singin{
+    align-items: center;
+    margin-left: 15px;
+    
+}
+.nav-prebooking{
+    align-items: center;
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 1rem;
+    
+}
+.navcart i{
+    font-size: 30px;
+}
+.navcart{
+    font-size: 1rem;
+    font-weight: 900;
+}
+.navmenu i{
+font-size:  30px; 
+}
