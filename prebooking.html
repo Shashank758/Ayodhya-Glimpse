@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-Booking - Tourist Website</title>
+  <link rel="stylesheet" href="prebooking.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="form.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="pre-booking">
+    <h1>Pre-Booking</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select Destination</option>
+          <option value="Destination 1">Ram janmbhummi 1</option>
+          <option value="Destination 2">Hanumanghari 2</option>
+          <option value="Destination 3">Lata chowk 3</option>
+          <option value="Destination 4">Kanak bhavan 4</option>
+          <option value="Destination 5">Saryu ghat 5</option>
+          <option value="Destination 6">Naya Ghat 6</option>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="arrival-date">Arrival Date:</label>
+        <input type="date" id="arrival-date" name="arrival-date" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Ayodhya glimpse</p>
+  </footer>
+</body>
+</html>
