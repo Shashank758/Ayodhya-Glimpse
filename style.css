@@ -9,12 +9,12 @@
 
 .banner{
   background-image: url(logo.png);
-  height: 20vw;
+  height: 10vw;
   min-height: 100px;
   background-color: white;
   background-repeat: no-repeat;
   background-position:top center ;
-  background-size: 50%;
+  background-size: 35%;
   background-attachment: fixed;
 }
 
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    opacity: 90%;
+
 }
 .hero-message{
     
