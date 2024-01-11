@@ -5,24 +5,26 @@
 }
 .body{
     margin: 0px;
-    background-color: antiquewhite;
+    background-color: rgb(253, 205, 142);
 }
 
 .banner{
   background-image: url(top\ p.png);
   height: 20vw;
   min-height: 100px;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position:top center ;
-  background-size: 85%;
-  background-color: rgb(252, 172, 24);
-
+  background-size: 88%;
+  background-color: rgb(253, 205, 142);
+  
 }
 
 /*panel*/
 .nav{
   display: flex;
     background-color: rgb(84, 84, 84);
+    justify-content: space-evenly;
 }
 .nav a{
   display: block;
@@ -41,7 +43,11 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-color: rgb(247, 205, 38);
+}
+.content-area{
+background-color: rgb(253, 205, 142);
+height: 4vw;
+justify-content: center;
 }
 
 .content h2{
@@ -49,9 +55,8 @@
     color: black;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color:white;
-    width: 100%
-
+    width: 100%;
+    background-color: rgb(253, 205, 142);
 }
 .photo-grid {
   display: grid;
