@@ -5,17 +5,17 @@
 }
 .body{
     margin: 0px;
-    background-color: rgb(253, 205, 142);
+    background-color: #ffbd59;
 }
 .banner{
-  background-image: url(top\ p.png);
-  height: 20vw;
+  background-image: url(heading\ h.png);
+  height: 18vw;
   min-height: 100px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position:top center ;
   background-size: 88%;
-  background-color: rgb(253, 205, 142);
+  background-color: #ffbd59;
   }
 /*panel*/
 .nav{
@@ -40,7 +40,7 @@
   background-size: cover;
 }
 .content-area{
-background-color: rgb(253, 205, 142);
+background-color: #ffbd59;
 height: 4vw;
 justify-content: center;
 }
@@ -51,7 +51,6 @@ justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    background-color: rgb(253, 205, 142);
 }
 .photo-grid {
   display: grid;
