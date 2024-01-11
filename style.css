@@ -7,7 +7,6 @@
     margin: 0px;
     background-color: rgb(253, 205, 142);
 }
-
 .banner{
   background-image: url(top\ p.png);
   height: 20vw;
@@ -17,9 +16,7 @@
   background-position:top center ;
   background-size: 88%;
   background-color: rgb(253, 205, 142);
-  
-}
-
+  }
 /*panel*/
 .nav{
   display: flex;
@@ -34,8 +31,6 @@
   padding: 14px 20px;
   float: left;
 }
-
-
 .hero-panel{
   background-image: url(banner.gif);
   height: 35vw;
@@ -108,7 +103,6 @@ justify-content: center;
   text-align: center;
   margin: 0;
 }
-
 .event-card {
     border: 1px solid black;
     border-radius: 8px;
@@ -138,13 +132,7 @@ justify-content: center;
   .event-card a:hover {
     background-color: #0056b3;
   }
-  .upcoming-eve{
-    display: flex;
-    background-color: antiquewhite;
-  }
-  .upheading{
-    background-color: antiquewhite;
-  }
+  
   .eve h2{
     font-weight: 900;
     color: black;
@@ -153,17 +141,11 @@ justify-content: center;
     background-color:white;
     width: 100%
    }
- 
-
- .carousel {
-}
-
 .carousel-cell {
   width: 66%;
   margin-right: 10px;
   border-radius: 5px;
 }
-
 /* cell number */
 .carousel-cell:before {
   display: block;
@@ -175,30 +157,22 @@ justify-content: center;
 .carousel-cell img{
   max-width: 100px;
 }
-
-
-   
 /* Style for the local cuisine and dining section */
 #local-cuisine {
     padding: 30px;
     background-color: antiquewhite;
-    
-  }
-  
-  #local-cuisine h2 {
+   }
+   #local-cuisine h2 {
     font-weight: 900;
     color: black;
     margin-top: 20px;
     margin-bottom: 20px;
-  
   }
-  
   #local-cuisine p {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
   }
-  
   .restaurant, .popular-dishes {
     margin-bottom: 30px;
   }
@@ -227,8 +201,6 @@ justify-content: center;
     line-height: 1.4;
     color: #555;
   }
-  
-  /* Style for restaurant information boxes */
   .restaurant li, .popular-dishes li {
     border: 1px solid #ddd;
     padding: 15px;
@@ -236,37 +208,21 @@ justify-content: center;
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
   }
-  
   .restaurant li:hover, .popular-dishes li:hover {
     transform: translateY(-5px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Styling for Local Traditions section */
   .trad-heading h2 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
   }
-  
-  #traditions {
+   #traditions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
-  .tradition {
+   .tradition {
     width: 48%;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -277,7 +233,6 @@ justify-content: center;
     border-radius: 10px; /* Add some rounded corners */
     transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
   }
-  
   .tradition:hover {
     transform: scale(1.02); /* Scale up on hover for a subtle interactive effect */
   }
@@ -301,12 +256,7 @@ justify-content: center;
   .tradition p {
     margin-bottom: 10px;
   }
-  
-  
-
-
-
-  .foot-panel1{
+   .foot-panel1{
     background-color: #555;
     color: white;
     height: 70px;
@@ -315,14 +265,11 @@ justify-content: center;
     justify-content: center;
     font-weight: 800;
 }
-
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
 }
-
-
 .footer-content {
     display: flex;
     justify-content: space-evenly;
