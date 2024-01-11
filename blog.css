@@ -59,3 +59,18 @@ main {
 .read-more:hover {
   background-color: #555;
 }
+@media only screen and (max-width: 600px) {
+  header, main, footer {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
