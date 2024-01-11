@@ -32,12 +32,13 @@
   float: left;
 }
 .hero-panel{
-  background-image: url(banner.gif);
-  height: 35vw;
-  min-height: 100px;
+  background-image: url(poster.png);
+  height: 500px;
+  width: 1262px;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: 100%;
+  background-color: #ffbd59;
 }
 .content-area{
 background-color: #ffbd59;
@@ -136,11 +137,11 @@ margin-top: 10px;
   }
   
   .eve h2{
-    font-weight: 900;
+    font-size: xx-large;
     color: black;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color:white;
+    background-color: #ffbd59;
     width: 100%
    }
 .carousel-cell {
