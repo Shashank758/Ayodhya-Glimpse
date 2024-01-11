@@ -5,7 +5,7 @@
 }
 .body{
     margin: 0px;
-    background-color: #ffbd59;
+    background-color:#ffbd59;
 }
 .banner{
   background-image: url(heading\ h.png);
@@ -32,16 +32,15 @@
   float: left;
 }
 .hero-panel{
-  background-image: url(poster.png);
-  height: 500px;
-  width: 1262px;
+  background-image: url(banner.gif);
+  height: 35vw;
+  min-height: 100px;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100%;
-  background-color: #ffbd59;
+  background-size: cover;
 }
 .content-area{
-background-color: #ffbd59;
+background-color: white;
 height: 4vw;
 justify-content: center;
 margin-bottom: 20px;
