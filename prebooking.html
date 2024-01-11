@@ -1,58 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pre-Booking - Tourist Website</title>
-  <link rel="stylesheet" href="prebooking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Booking - Ayodhya Tourist Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, checkbox {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+            font-size: 16px;
+          
+        }
+
+        input[type="date"] {
+            appearance: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #priceDisplay {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            padding: 15px;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            input, select, checkbox {
+                font-size: 14px;
+          
+            }
+
+            input[type="submit"] {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
+
+<header>
+    <h1>Ayodhya Tourist Website</h1>
+</header>
+
+<nav>
+    <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="destination.html">Destinations</a></li>
         <li><a href="form.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main class="pre-booking">
-    <h1>Pre-Booking</h1>
-    <form action="#" method="POST">
-      <div class="form-group">
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
+        <li><a href="prebooking.html">Pre-Booking</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Pre-Booking</h2>
+    <form action="payment.html" method="POST" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Choose Destinations:</label>
+            <div>
+                <input type="checkbox" id="destination1" name="destinations[]" value="Ramjanmbhoomi">
+                <label for="destination1">Ram Janmbhoomi</label>
+            </div>
+            <div>
+              <input type="checkbox" id="destination1" name="destinations[]" value="Ramjanmbhoomi">
+              <label for="destination1">Guptar ghat </label>
+          </div>
+          <div>
+            <input type="checkbox" id="destination1" name="destinations[]" value="Ramjanmbhoomi">
+            <label for="destination1">Naya ghat</label>
+        </div>
+        <div>
+          <input type="checkbox" id="destination1" name="destinations[]" value="Ramjanmbhoomi">
+          <label for="destination1">Hanuman ghari</label>
       </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="destination">Destination:</label>
-        <select id="destination" name="destination" required>
-          <option value="">Select Destination</option>
-          <option value="Destination 1">Ram janmbhummi 1</option>
-          <option value="Destination 2">Hanumanghari 2</option>
-          <option value="Destination 3">Lata chowk 3</option>
-          <option value="Destination 4">Kanak bhavan 4</option>
-          <option value="Destination 5">Saryu ghat 5</option>
-          <option value="Destination 6">Naya Ghat 6</option>
-          
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="arrival-date">Arrival Date:</label>
-        <input type="date" id="arrival-date" name="arrival-date" required>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Submit">
-      </div>
+      <div>
+        <input type="checkbox" id="destination1" name="destinations[]" value="Ramjanmbhoomi">
+        <label for="destination1">Saryu ghat </label>
+    </div>
+    <div>
+      <input type="checkbox" id="destination1" name="destinations[]" value="Ramjanmbhoomi">
+      <label for="destination1">Kanak bhavan</label>
+  </div>
+            <div>
+                <input type="checkbox" id="selectAll" onclick="toggleAllDestinations()">
+                <label for="selectAll">Select All</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="arrival-date">Arrival Date:</label>
+            <input type="date" id="arrival-date" name="arrival-date" required>
+        </div>
+        <div class="form-group">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+        </div>
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Proceed to Payment">
+        </div>
+        <div id="priceDisplay"></div>
     </form>
-  </main>
-  
-  <footer>
-    <p>&copy; 2024 Ayodhya glimpse</p>
-  </footer>
+</main>
+
+<footer>
+    <p>&copy; 2024 Ayodhya Glimpse</p>
+</footer>
+
+<script>
+    function validateForm() {
+        // You can add custom validation logic here
+        return true; // Return false if you want to prevent the form from submitting
+    }
+
+    function toggleAllDestinations() {
+        var checkboxes = document.getElementsByName('destinations[]');
+        var selectAllCheckbox = document.getElementById('selectAll');
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = selectAllCheckbox.checked;
+        }
+
+        calculatePrice();
+    }
+
+    function calculatePrice() {
+        var checkboxes = document.getElementsByName('destinations[]');
+        var priceDisplay = document.getElementById('priceDisplay');
+        var totalPrice = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                // Add prices for each selected destination
+                totalPrice += getPriceForDestination(checkboxes[i].value);
+            }
+        }
+
+        // Display prices
+        if (totalPrice > 0) {
+            priceDisplay.innerHTML = '<p>Total Price: $' + totalPrice.toFixed(2) + '</p>';
+        } else {
+            priceDisplay.innerHTML = '';
+        }
+    }
+
+    function getPriceForDestination(destination) {
+        // Replace this with your actual pricing logic
+        // For now, assuming each destination has a price of $50
+        var basePrice = 50;
+
+        // Add any specific logic based on destination
+        // Example: if (destination === 'Ramjanmbhoomi') basePrice += 10;
+
+        return basePrice;
+    }
+
+    // Attach event listeners to checkboxes
+    var checkboxes = document.getElementsByName('destinations[]');
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener('change', calculatePrice);
+    }
+</script>
+
 </body>
 </html>
