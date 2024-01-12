@@ -18,19 +18,7 @@
   background-color: white;
   }
 /*panel*/
-.nav{
-  display: flex;
-    background-color: rgb(84, 84, 84);
-    justify-content: space-evenly;
-}
-.nav a{
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  padding: 14px 20px;
-  float: left;
-}
+
 .hero-panel{
   background-image: url(banner.gif);
   height: 35vw;
@@ -314,12 +302,7 @@ footer {
         text-align: center;
     }
 }
-@media screen and (max-width:700px){
- .nav{
-flex-direction: column;
-padding: 10px 0px;
-}
-}
+
 @media only screen and (max-width: 768px) {
   .container {
     padding: 10px;
