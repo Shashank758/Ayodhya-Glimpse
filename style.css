@@ -8,14 +8,14 @@
     background-color:#ffbd59;
 }
 .banner{
-  background-image: url(heading\ h.png);
+  background-image: url(Ayodhya\ glimpse\ \(1\).png);
   height: 18vw;
   min-height: 100px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position:top center ;
   background-size: 88%;
-  background-color: #ffbd59;
+  background-color: white;
   }
 /*panel*/
 .nav{
@@ -219,45 +219,24 @@ margin-top: 10px;
     text-align: center;
     margin-bottom: 20px;
   }
-   #traditions {
+  .ayodhya-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-   .tradition {
-    width: 48%;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.ayodhya-item {
+    width: 100%; /* Adjusted width for mobile devices */
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-sizing: border-box;
-    overflow: hidden; /* Clear floats */
-    border: 2px solid #1b1a1a; /* Add a border for better separation */
-    border-radius: 10px; /* Add some rounded corners */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-  }
-  .tradition:hover {
-    transform: scale(1.02); /* Scale up on hover for a subtle interactive effect */
-  }
-  
-  .tradition img {
+}
+
+img {
     max-width: 100%;
     height: auto;
-    display: block; /* Remove extra space below the image */
-    border-bottom: 1px solid #ddd; /* Add a border below the image */
-  }
-  
-  .tradition-info {
-    padding: 15px;
-  }
-  
-  .tradition h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .tradition p {
-    margin-bottom: 10px;
-  }
+}
+
+
    .foot-panel1{
     background-color: #555;
     color: white;
@@ -351,18 +330,22 @@ padding: 10px 0px;
     margin-bottom: 10px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
+@media (min-width: 768px) {
+  .ayodhya-item {
+      width: 48%; /* Two items in a row */
   }
+}
 
-  .tradition {
-    width: 100%;
+/* Media Query for larger desktops */
+@media (min-width: 1200px) {
+  .ayodhya-item {
+      width: 30%; /* Three items in a row */
   }
 }
 @media only screen and (max-width: 768px) {
   .photo-grid {
-    padding: 5px;
+    padding: 20px;
+    
   }
 }
 @media only screen and (max-widht: 768px) {
